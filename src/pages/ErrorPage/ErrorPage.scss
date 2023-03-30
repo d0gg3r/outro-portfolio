@@ -1,0 +1,23 @@
+.errorPage_container {
+  padding: 5rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+}
+
+.errorPage_text {
+  flex: 3;
+  text-align: center;
+  font-family: var(--font-unbounded);
+}
+
+.monkey-gif {
+  flex: 0.5;
+  width: 15vw;
+
+  img {
+    width: 100%;
+  }
+}

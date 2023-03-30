@@ -1,0 +1,136 @@
+.app__product {
+  min-height: calc(100vh - 2.5rem);
+}
+
+.desktop {
+  padding: 4rem 2rem 4rem;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 16px;
+}
+
+.product_mobile-container {
+  display: none;
+}
+
+.product_desc-column {
+  min-height: calc(100vh - 4rem);
+  position: sticky;
+  top: 25%;
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h1 {
+    font-family: var(--font-unbounded);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
+  }
+
+  span {
+    font-family: var(--font-unbounded);
+    font-weight: 200;
+    font-size: 0.85rem;
+    letter-spacing: -0.25px;
+    text-align: justify;
+  }
+}
+
+.product_image-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+
+  .image-wrapper {
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      aspect-ratio: 2.7/3;
+      object-fit: contain;
+      object-position: center;
+      mix-blend-mode: color-burn;
+    }
+  }
+}
+
+.product_price-column {
+  min-height: calc(100vh - 4rem);
+  position: sticky;
+  top: 25%;
+  flex: 2.5;
+  font-family: var(--font-space);
+  font-size: 0.85rem;
+
+  span {
+    text-decoration: line-through;
+    color: grey;
+  }
+
+  select {
+    appearance: none;
+    margin: 0.7rem 0;
+    font-family: var(--font-space);
+    background: #fff;
+    outline: none;
+    border: 0.1px solid #777;
+    width: 100%;
+    height: 30px;
+    padding: 4px 6px;
+    padding-right: 10px;
+    font-size: 0.75rem;
+    line-height: 12px;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  }
+
+  .product_right-column_btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.35rem;
+
+    button {
+      font-size: 0.65rem;
+      font-family: var(--font-space);
+      padding: 4px 5px;
+      border: none;
+      outline: none;
+      color: #000;
+
+      cursor: pointer;
+    }
+
+    .product_btn-bag {
+      background: black;
+      width: 65%;
+      color: #fff;
+    }
+
+    .product_btn-wishlist {
+      background: transparent;
+      color: #000;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .desktop {
+    display: none;
+  }
+
+  .product_mobile-container {
+    display: flex;
+  }
+}

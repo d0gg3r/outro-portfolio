@@ -1,0 +1,1 @@
+export const subCategories = ['CLOTHING', 'SHOES', 'ACCESSORIES']

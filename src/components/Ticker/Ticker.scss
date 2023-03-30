@@ -1,0 +1,33 @@
+@keyframes ticker {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+
+.ticker {
+  padding: 3.5rem 0 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticker-container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: fit-content;
+  will-change: transform;
+  line-height: 1;
+  padding: 10px 0;
+  animation: ticker 50s linear infinite;
+  background: #000000;
+  color: #fff;
+  font-family: var(--font-space);
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}

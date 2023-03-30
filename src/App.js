@@ -1,25 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+  useLocation
+} from "react-router-dom"
+import { Home, Product, Products, ErrorPage } from './pages'
+import { Navbar, Footer } from './components'
 
-function App() {
+
+import './App.scss'
+
+const Layout = () => {
+  const { pathname } = useLocation()
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/category/:id',
+        element: <Products />
+      },
+      {
+        path: '/item/:id',
+        element: <Product />
+      },
+    ]
+  },
+])
+
+const App = () => {
+  return (
+    <div>
+      <RouterProvider router={router} />
+    </div>
+  )
+}
+
+export default App

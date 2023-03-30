@@ -1,0 +1,70 @@
+const data = [
+  {
+    id: '231891M201003',
+    img: 'https://img.ssensemedia.com/images/f_auto,q_auto:best/231891M201003_1/a-cold-wall-blue-gradient-sweater.jpg',
+    img2: 'https://img.ssensemedia.com/images/f_auto,q_auto:best/231891M201003_2/a-cold-wall-blue-gradient-sweater.jpg',
+    brand: 'A-COLD-WALL',
+    url: '/a-cold-wall',
+    title: 'Blue Gradient Sweater',
+    description: 'Brushed knit stretch wool sweater. Gradient pattern throughout.',
+    color: 'Volt blue',
+    materials: '96% wool, 3% polyamide, 1% elastane.',
+    country: 'China',
+    type: 'clothing',
+    gender: 'men',
+    price: '$545',
+    sale: false
+  },
+  {
+    id: '222553F015004',
+    img: 'https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222553F015004_1/jacquemus-beige-le-papier-le-bob-neve-bucket-hat.jpg',
+    img2: 'https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222553F015004_2/jacquemus-beige-le-papier-le-bob-neve-bucket-hat.jpg',
+    brand: 'JACQUEMUS',
+    url: '/jacquemus',
+    title: "Beige Le Papier 'Le Bob Neve' Bucket Hat.",
+    description: 'Shag knit stretch polyamide bucket hat in beige.',
+    color: 'Off-white',
+    materials: '98% polyamide, 2% elastane.',
+    country: 'Italy',
+    type: 'accessories',
+    gender: 'women',
+    price: '$235',
+    sale: false
+  },
+  {
+    id: '222020M138003',
+    img: 'https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222631M178021_1/thisisneverthat-black-zip-down-jacket.jpg',
+    img2: 'https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222631M178021_3/thisisneverthat-black-zip-down-jacket.jpg',
+    brand: 'THISISNEVERTHAT',
+    url: '/thisisneverthat',
+    title: 'Black Zip Down Jacket',
+    description: 'Stretch recycled nylon jersey balaclava featuring logo pattern in brown and beige.',
+    color: 'All over moon/Brown',
+    materials: '88% recycled polyamide, 12% recycled elastane.',
+    country: 'Portugal',
+    type: 'clothing',
+    gender: 'men',
+    oldPrice: '$290',
+    price: '$165',
+    sale: true
+  },
+  {
+    id: '222631M178021',
+    img: 'https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222020M138003_1/marine-serre-brown-all-over-moon-balaclava.jpg',
+    img2: 'https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222020M138003_2/marine-serre-brown-all-over-moon-balaclava.jpg',
+    brand: 'MARINE SERRE',
+    url: '/marine-serre',
+    title: 'Brown All Over Moon Balaclava',
+    description: 'Stretch recycled nylon jersey balaclava featuring logo pattern in brown and beige.',
+    color: 'All over moon/Brown',
+    materials: '88% recycled polyamide, 12% recycled elastane.',
+    country: 'Portugal',
+    type: 'accessories',
+    gender: 'women',
+    oldPrice: '$185',
+    price: '$94',
+    sale: true
+  }
+]
+
+export { data }

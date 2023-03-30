@@ -1,0 +1,92 @@
+.app__newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+
+  h3 {
+    font-family: var(--font-unbounded);
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  input {
+    font-family: var(--font-unbounded);
+    font-weight: 400;
+    padding: 0.6rem 1rem;
+    width: 300px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 0.7rem;
+    background: black;
+    color: white;
+
+    &::placeholder {
+      color: white;
+      font-family: var(--font-unbounded);
+      font-weight: 400;
+      font-size: 0.7rem;
+    }
+  }
+
+  button {
+    background: transparent;
+    color: rgb(51, 51, 51);
+    padding: 0.67rem 1rem;
+    border: 0.5px solid #777;
+    border-radius: 7px;
+    margin-left: 1rem;
+    font-family: var(--font-unbounded);
+    font-weight: 500;
+    font-size: 0.6rem;
+
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app__newsletter {
+    gap: 2rem;
+    margin-bottom: 4rem;
+
+    h3 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    input {
+      width: 150px;
+      font-size: 0.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .app__newsletter {
+    margin-bottom: 3rem;
+
+    h3 {
+      font-size: 1.4rem;
+    }
+    .app__newsletter-input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      gap: 1.5rem;
+
+      input {
+        width: 100%;
+      }
+
+      button {
+        margin: 0;
+      }
+    }
+  }
+}
