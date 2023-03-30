@@ -10,6 +10,7 @@ import { Navbar, Footer } from './components'
 
 
 import './App.scss'
+import Preloader from './components/Preloader/Preloader'
 
 const Layout = () => {
   const { pathname } = useLocation()
@@ -19,7 +20,7 @@ const Layout = () => {
   }, [pathname])
 
   return (
-    <div className='app'>
+    <div className="app">
       <Navbar />
       <Outlet />
       <Footer />
@@ -50,9 +51,24 @@ const router = createBrowserRouter([
 ])
 
 const App = () => {
+  const [loading, setLoading] = React.useState(false)
+
+  React.useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000);
+  }, [])
   return (
     <div>
-      <RouterProvider router={router} />
+      {
+        loading ? (
+          <Preloader />
+        ) : (
+
+          <RouterProvider router={router} />
+        )
+      }
     </div>
   )
 }

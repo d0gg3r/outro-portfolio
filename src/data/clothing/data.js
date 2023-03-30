@@ -33,7 +33,7 @@ export const data = [
     sub_categories: 'ACCESSORIES',
     country: 'Italy',
     sizes: ["US 7", "US 8", "US 9.5"],
-    type: 'featured',
+    type: 'normal',
     brand: 'AGR',
     id: '231319M147001'
   },
@@ -52,7 +52,7 @@ export const data = [
     sub_categories: 'CLOTHING',
     country: 'Myanmar',
     sizes: ["S", "M", "L", "XL", "XXL"],
-    type: 'featured',
+    type: 'normal',
     brand: 'CARHARTT WORK IN PROGRESS',
     id: '222111M202038'
   },
@@ -90,7 +90,7 @@ export const data = [
     sub_categories: 'SHOES',
     country: 'Italy',
     sizes: ["42", "43", "44", "45", "46"],
-    type: 'featured',
+    type: 'normal',
     brand: 'ACNE STUDIOS',
     id: '221129M237007'
   },
@@ -224,7 +224,7 @@ export const data = [
     coverImg2: 'https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222020M202000_2/marine-serre-black-ouroboros-sweatshirt.jpg',
     extraImg: 'https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222020M202000_3/marine-serre-black-ouroboros-sweatshirt.jpg',
     price: 290,
-    oldPrice: '',
+    oldPrice: 390,
     onSale: true,
     color: 'Black',
     materials: '100% organic cotton.',
@@ -240,7 +240,7 @@ export const data = [
       "XL",
       "XXL"
     ],
-    type: 'normal',
+    type: 'featured',
     brand: 'MARINE SERRE',
     id: '222020M202000'
   },
@@ -406,7 +406,7 @@ export const data = [
       "M",
       "L"
     ],
-    type: 'normal',
+    type: 'featured',
     brand: 'ENTIRE STUDIOS',
     id: '231940F097005'
   },
@@ -460,7 +460,7 @@ export const data = [
       "WAIST US 32",
 
     ],
-    type: 'normal',
+    type: 'featured',
     brand: 'EYTYS',
     id: '231640F069005'
   },

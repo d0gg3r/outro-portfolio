@@ -1,24 +1,21 @@
 .app__home {
   padding: 1rem 2rem 0;
   position: relative;
+  overflow: hidden;
 }
 
 .app__home-header_title {
   font-family: var(--font-unbounded);
   font-weight: 200;
   font-size: 5rem;
-  overflow: hidden;
   position: relative;
 }
 
 .app__home-header_svg {
   position: absolute;
   top: 0;
-  // right: -20%;
-  // width: %;
   animation: rotate 20s linear infinite;
   z-index: -1;
-  overflow: hidden;
 }
 
 .app__home-header_categories {
