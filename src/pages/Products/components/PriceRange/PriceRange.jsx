@@ -14,7 +14,7 @@ const PriceRange = ({ maxPrice, setMaxPrice }) => {
           max={1500}
           onChange={setMaxPrice}
         />
-        <span>$1500</span>
+        <span>${maxPrice}</span>
       </div>
     </div>
   )
